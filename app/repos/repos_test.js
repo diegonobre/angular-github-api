@@ -1,15 +1,15 @@
 'use strict';
 
-describe('myApp.repos module', function() {
+describe('appGitHubApi.repos module', function() {
 
-  beforeEach(module('myApp.view2'));
+  beforeEach(module('appGitHubApi.repos'));
 
   describe('repos controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
-      var view2Ctrl = $controller('View2Ctrl');
-      expect(view2Ctrl).toBeDefined();
+      var reposCtrl = $controller('ReposCtrl');
+      expect(reposCtrl).toBeDefined();
     }));
 
   });

@@ -1,5 +1,7 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<p><b>diegonobre</b>' repositories: </p>
+
+<div ng-controller="ReposCtrl">
+    <div ng-repeat="repo in repos">
+        <p>{{repo.name}}</p>
+    </div>
+</div>
