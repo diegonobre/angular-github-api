@@ -1,1 +1,7 @@
-<p>This is the partial for view 1.</p>
+<p>Starred by <b>diegonobre</b></p>
+
+<div ng-controller="StarredCtrl">
+    <div ng-repeat="star in starred">
+        <p>{{star.name}}</p>
+    </div>
+</div>

@@ -1,15 +1,15 @@
 'use strict';
 
-describe('myApp.starred module', function() {
+describe('appGitHubApi.starred module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('appGitHubApi.starred'));
 
   describe('starred controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
-      var view1Ctrl = $controller('View1Ctrl');
-      expect(view1Ctrl).toBeDefined();
+      var starredCtrl = $controller('StarredCtrl');
+      expect(starredCtrl).toBeDefined();
     }));
 
   });

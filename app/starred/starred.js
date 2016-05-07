@@ -1,14 +1,16 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('appGitHubApi.starred', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/starred', {
     templateUrl: 'starred/starred.html',
-    controller: 'View1Ctrl'
+    controller: 'StarredCtrl'
   });
 }])
 
-.controller('View1Ctrl', [function() {
-
-}]);
+.controller('StarredCtrl', function($scope, $http) {
+  $http.get('https://api.github.com/users/diegonobre/starred').success(function(data) {
+    $scope.starred = data;
+  });
+});
