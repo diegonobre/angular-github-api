@@ -20,7 +20,7 @@ describe('app github api', function() {
 
     it('should render starred when user navigates to /starred', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for starred/);
+        toMatch(/Starred by/);
     });
 
   });
@@ -35,7 +35,7 @@ describe('app github api', function() {
 
     it('should render repos when user navigates to /repos', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for repos/);
+        toMatch(/repositories:/);
     });
 
   });
