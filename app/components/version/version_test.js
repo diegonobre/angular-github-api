@@ -1,7 +1,7 @@
 'use strict';
 
-describe('myApp.version module', function() {
-  beforeEach(module('myApp.version'));
+describe('appGitHubApi.version module', function() {
+  beforeEach(module('appGitHubApi.version'));
 
   describe('version service', function() {
     it('should return current version', inject(function(version) {
