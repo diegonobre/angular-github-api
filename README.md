@@ -1,8 +1,8 @@
-# angular-seed — the seed for AngularJS apps
+# angular-github-api
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+This project is an application skeleton to play with [GitHub API](https://api.github.com/).
+
+This starts as a clone of angular-seed project.
 
 The seed contains a sample AngularJS application and is preconfigured to install the Angular
 framework and a bunch of development and testing tools for instant web development gratification.
@@ -91,12 +91,12 @@ app/                    --> all of the source files for the application
       interpolate-filter_test.js --> interpolate filter tests
   view1/                --> the view1 view template and logic
     view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
+    starred.js              --> the controller logic
+    starred_test.js         --> tests of the controller
   view2/                --> the view2 view template and logic
     view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
+    repos.js              --> the controller logic
+    repos_test.js         --> tests of the controller
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
   index-async.html      --> just like index.html, but loads js files asynchronously
