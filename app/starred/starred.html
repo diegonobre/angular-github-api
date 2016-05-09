@@ -1,7 +1,9 @@
-<p>Starred by <b>diegonobre</b></p>
+<h3>Starred by <b>diegonobre</b></h3>
 
-<div ng-controller="StarredCtrl">
-    <div ng-repeat="star in starred">
-        <p>{{star.name}}</p>
+<div class="row" ng-controller="StarredCtrl">
+    <div class="col-md-4" ng-repeat="star in starred">
+        <h2>{{star.name}}</h2>
+        <p>{{star.description}}</p>
+        <p><a class="btn btn-default" href="{{star.html_url}}" target="_blank" role="button">View project &raquo;</a></p>
     </div>
 </div>

@@ -20,18 +20,51 @@
 
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/starred">starred</a></li>
-    <li><a href="#/repos">repositories</a></li>
-  </ul>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Coders.Social</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#/starred">Starred</a></li>
+        <li><a href="#/repos">Repositories</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome to corders social network</h1>
+    <p>This is a project for study purpose. We are using Angular + Bootstrap + GitHub API.</p>
+    <p><a class="btn btn-primary btn-lg" href="http://github.com/diegonobre/angular-github-api" target="_blank" role="button">Visit the project on GitHub &raquo;</a></p>
+  </div>
+</div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+<div class="container">
   <div ng-view></div>
 
   <div>Angular GitHub API: v<span app-version></span></div>
+  
+  <hr>
+
+  <footer>
+    <p>&copy; 2015 Company, Inc.</p>
+  </footer>
+</div> <!-- /container -->
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>

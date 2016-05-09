@@ -1,7 +1,9 @@
-<p><b>diegonobre</b>' repositories: </p>
+<h3><b>diegonobre</b>' repositories:</h3>
 
-<div ng-controller="ReposCtrl">
-    <div ng-repeat="repo in repos">
-        <p>{{repo.name}}</p>
+<div class="row" ng-controller="ReposCtrl">
+    <div class="col-md-4" ng-repeat="repo in repos">
+        <h2>{{repo.name}}</h2>
+        <p>{{repo.description}}</p>
+        <p><a class="btn btn-default" href="{{repo.html_url}}" target="_blank" role="button">View project &raquo;</a></p>
     </div>
 </div>
