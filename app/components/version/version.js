@@ -5,4 +5,4 @@ angular.module('appGitHubApi.version', [
   'appGitHubApi.version.version-directive'
 ])
 
-.value('version', '0.01');
+.value('version', '0.0.1');
