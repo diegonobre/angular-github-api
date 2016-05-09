@@ -5,7 +5,8 @@ angular.module('appGitHubApi', [
   'ngRoute',
   'appGitHubApi.starred',
   'appGitHubApi.repos',
-  'appGitHubApi.version'
+  'appGitHubApi.version',
+  'angular-loading-bar'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/starred'});
